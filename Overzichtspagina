@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>overzichtspagina</title>
+</head>
+<body>
+   <header>
+       <a href="index.html">
+           <img src="Images/LogoTransavia.png" alt="Logo Transavia">
+       </a>
+       <a href="">
+           <img src="Images/search-icon.png" alt="Zoeken">
+       </a>
+       <a href="login.html">
+           <img src="Images/account_icon.svg" alt="Login">
+       </a>
+   </header>
+   
+   <nav>
+       <ul>
+           <li><a href="">1-99</a></li>
+           <li><a href="">Datum</a></li>
+           <li><a href="">Leestijd</a></li>
+           <li><a href="">Meest gelezen</a></li>
+           <li><a href="">Populair</a></li>
+       </ul>
+       <h3>Jouw verhalen</h3>
+       <ul>
+           <li><a href="">Favorieten</a></li>
+           <li><a href="">Gedeeld</a></li>
+       </ul>
+   </nav>
+   
+   <aside>
+       <h2>Aanbevolen voor jou:</h2>
+       <section>
+           <h3>Freudiaans</h3>
+           <p>Ik stap uit de lul. Mijn aarsrivaal ligt te slapen in zijn kinderwagen. Wat een kutweer. De mensen zijn met zichzelf bezig, wat er hoogstwaarschijnlijk op neerkomt dat ze aan seks met hun moeder denken. Ik ben op weg naar de Openaarse Bilbiotheek van Amsterdam, om Stijloefeningen te lenen, een boek waarin Raymond Queneau op […]</p>
+           <img src="Images/heart-icon.png" alt="Likes">18
+           <a href="">Lees verder></a>
+       </section>
+       <section>
+           <h3>Martin bril</h3>
+           <p>Centraal Station. Iedereen gaat er naartoe, niemand moet er zijn. Behalve om verder te reizen. Ik stap uit de bus, lijn 21. Van Geuzenveld naar Centraal Station. Mijn zoon slaapt in zijn kinderwagen. Eindelijk. Het is druk op het plein, en toch heerst er een rust. De mensen zijn met zichzelf bezig. Kop in de […]</p>
+           <img src="Images/heart-icon.png" alt="Likes">34
+           <a href="">Lees verder></a>
+       </section>
+       <section>
+           <h3>Klumperbeven</h3>
+           <p>Ik bus de stap uit en been met gepaste zwind over het stationsplein. In mijn zoon ligt de kinderwagen te slapen. Het pijpt regenstelen en er guurt een winderige waai. De mensen keren in zichzelf gelopen, kraag in de kop, grond richting neus. Het is hier niet bepoeld een vrolijke baal. Wat een zeringtooi! Amsterdam […]</p>
+           <img src="Images/heart-icon.png" alt="Likes">68
+           <a href="">Lees verder></a>
+       </section>
+       <section>
+           <h3>Rondo's</h3>
+           <p>Je zocht een boek van Raymond Queneau Stijloefeningen was het geheten Je stapte uit de bus, je zoon sliep zo Je zocht een boek van Raymond Queneau Liep over een nat en wind’rig plein, o Bouwputten hadden het uiteen gereten Je zocht een boek van Raymond Queneau Stijloefeningen was het geheten Een Franse vrouw met […]</p>
+           <img src="Images/heart-icon.png" alt="Likes">45
+           <a href="">Lees verder></a>
+       </section>
+   </aside>
+   
+   <main>
+       <h1>Verhaal van de dag</h1>
+       <section>
+           <h3>Steenkolenfrans</h3>
+           <p>Le premier fevrièr 2011. Presque midi. Le bus s’arrête. Ligne 21. Place de Gare Centrale. Je marche au derrière d’un poussette. Mon fils dort. Je suis en route au Bibliothèque Public pour emprunteur Exercices de Style de Raymond Queneau. C’est un livre très dificile d’acquérir. Mais zut alors, quelle ravage ici! Il y a beaucoup […]</p>
+           <img src="Images/heart-icon.png" alt="Likes">348
+           <a href="">></a>
+       </section>
+       <section>
+           <h2>Verhalen:<ins>Nieuwste</ins></h2>
+           <section>
+               <h3>Verrassing</h3>
+               <p>- ‘Biertje dan maar?’ – ‘Graag.’ – ‘Vermoeiende dag?’ – ‘Nah. Naar de bilbiotheek geweest. Met de bus.’ – ‘Gaat daar een bus naartoe?’ – ‘De bus stopt op het stationsplein.’ – ‘Ah. En vandaar moet je lopen?’ – ‘Ja, ik was met mijn zoon. Die sliep in zijn kinderwagen.’ – ‘Goed zo. Lekker wandelweer?’ […]</p>
+               <img src="Images/heart-icon.png" alt="Likes">13
+               <a href="">Lees verder></a>
+           </section>
+           <section>
+               <h3>Beroemd</h3>
+               <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘Mijn vrouw is een groot fan van u’, roept hij. ‘Doe haar de groeten’, zeg ik en stap uit. Centraal Station. Ik duw mijn zoon voort. Hij slaapt. Zich onbewust van de last die er […]</p>
+               <img src="Images/heart-icon.png" alt="Likes">42
+               <a href="">Lees verder></a>
+           </section>
+           <section>
+               <h3>Freudiaans</h3>
+               <p>Ik stap uit de lul. Mijn aarsrivaal ligt te slapen in zijn kinderwagen. Wat een kutweer. De mensen zijn met zichzelf bezig, wat er hoogstwaarschijnlijk op neerkomt dat ze aan seks met hun moeder denken. Ik ben op weg naar de Openaarse Bilbiotheek van Amsterdam, om Stijloefeningen te lenen, een boek waarin Raymond Queneau op […]</p>
+               <img src="Images/heart-icon.png" alt="Likes">18
+               <a href="">Lees verder></a>
+           </section>
+           <section>
+               <h3>Steenkolenfrans</h3>
+               <p>Le premier fevrièr 2011. Presque midi. Le bus s’arrête. Ligne 21. Place de Gare Centrale. Je marche au derrière d’un poussette. Mon fils dort. Je suis en route au Bibliothèque Public pour emprunteur Exercices de Style de Raymond Queneau. C’est un livre très dificile d’acquérir. Mais zut alors, quelle ravage ici! Il y a beaucoup […]</p>
+               <img src="Images/heart-icon.png" alt="Likes">348
+               <a href="">Lees verder></a>
+           </section>
+       </section>
+   </main>
+    
+</body>
+</html>
