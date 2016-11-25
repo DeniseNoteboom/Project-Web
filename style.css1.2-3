@@ -1,0 +1,65 @@
+body {
+    text-align: center;
+    text-align: justify; /*uitgelijnd*/
+    
+    max-width: 20em; /*mobiel breedte 1 collom*/
+    max-width: 30em; /*tablet breedte 1 collom*/
+    max-width: 40em; /*desktop breedte 1 collom*/
+    max-width: 50em; /*70% desktop scherm (goed voor 2 kolommen)*/
+    
+    /*tekst in het midden op desktop*/
+    margin-left: 20%; 
+    margin-right: 20%;
+}
+
+p {
+    font-size: 2em; /*voor doven en slechthorende*/
+    font-size: 1em; /*gemiddelde tekstgrootte*/
+    font-size: 1.2em; /*iets groter dan gemiddelde*/
+    
+    line-height: 1em; /*iets dichter bij dan gemiddeld*/
+    line-height: 2em; /*ong 1cm afstand*/
+    line-height: 1.2em; /*gemiddelde afstand*/
+    line-height: 1.5em; /*iets verder dan gemiddeld*/
+    
+    letter-spacing: 0.1em; /*halve spatie ertussen*/
+    letter-spacing: 0.03em; /*iets meer ruimte dan gemiddeld*/
+    
+    column-count: 3; /*2 kolommen (goed leesbaar met max-width van 70em)*/
+    column-count: 2; /*2 kolommen*/
+    column-gap: 2em; /*gemiddelde ruimte*/
+    column-gap: 4em; /*veel ruimte maar niet irritant*/
+    column-gap: 3em; /*ruime tussenruimte*/
+}
+
+h1 {
+    letter-spacing: -0.1em; /*tegen elkaar aan*/
+    letter-spacing: 0.1em; /*halve spatie ertussen*/
+    
+    font-family: sans-serif;
+}
+
+time {
+    font-family: cursive;
+    font-size: 0.7em;
+}
+
+header {
+    position: fixed; /*blijft staan als je scrolled*/
+    margin-top: -15%; /*naar bovenkant*/
+}
+
+img.logo {
+    max-width: 15em; /*grootte*/
+    margin-left: -3em; /*afstand kant*/
+}
+
+img.zoek {
+    max-width: 2em; /*grootte*/
+    margin-left: 3em; /*afstand logo*/
+}
+
+img.login {
+    max-width: 3em; /*grootte*/
+    margin-left: 67em; /*naar rechts*/
+}
