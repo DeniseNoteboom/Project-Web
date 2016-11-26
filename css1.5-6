@@ -1,0 +1,118 @@
+.container {
+    border: 0.5em solid red;
+    
+    display: -webkit-flex;
+    display: inline-flex; /*box tot laatste item*/
+    display: flex; /*box over gehele breedte*/
+    
+    justify-content: flex-start; /*default*/
+    justify-content: center; /*in het midden*/
+    justify-content: flex-end; /*rechts*/
+    justify-content: space-around; /*ruimte aan de zijkant*/
+    justify-content: space-between; /*evenveel ruimte tussen items*/
+    
+    align-items: baseline; /*tekst*/
+    align-items: stretch; /*uitgerekt tot grootte box*/
+    align-items: flex-start; /*tegen bovenkant aan*/
+    align-items: flex-end; /*tegen onderkant aan*/
+    align-items: center; /*in het midden*/
+    
+    flex-direction: row-reverse; /*van rechts naar links*/
+    flex-direction: column; /*onder elkaar van boven naar beneden*/
+    flex-direction: column-reverse; /*onder elkaar van beneden naar boven*/
+    flex-direction: row; /*van links naar rechts (defauld)*/
+    
+}
+
+.logo {
+    width: 20em;
+    order: 1; /*waarom gebeurt er niks??*/
+}
+
+.zoek {
+    width: 2em;
+    align-self: flex-end; /*waarom gebeurt er niks??*/
+}
+
+.login {
+    width: 5em;
+}
+
+.auteur {
+    font-family: cursive;
+    font-size: 0.7em;
+}
+
+@media all and (max-width:2000px) { /*groot scherm:*/
+    
+    .wrapper {
+        column-count: 3;
+    }
+    
+    .logo {
+        width: 20em;
+    }
+
+    .zoek {
+        width: 2em;
+    }
+
+    .login {
+        width: 5em;
+    }
+}
+
+@media all and (max-width:1000px) { /*middel scherm:*/
+    
+    .wrapper {
+        column-count: 2;
+    }
+    
+    
+    .logo {
+        width: 10em;
+    }
+
+    .zoek {
+        width: 1em;
+    }
+
+    .login {
+        width: 2.5em;
+    }
+}
+
+@media all and (max-width: 500px) { /*klein scherm:*/
+    
+    .wrapper {
+        display: flex;
+        flex-direction: column; /*staat onder elkaar*/
+        column-count: 1;
+    }
+    
+    .wrapper > * { /*alles in de wrapper,*/
+        order: 0; /*is 0*/
+    }
+    
+    .auteur {
+        order: 1; /*de auteur is 1 en komt dus onderaan te staan*/
+    }
+    
+    .container {
+        flex-direction: column; /*onder elkaar*/
+    }
+    
+    .zoek {
+        align-self: flex-start; /*waarom gebeurt er niks??*/
+        float: left; /*naar links*/
+        margin-left: -11em; /*naar links*/
+        width: 1.5em; 
+    }
+    
+    .login {
+        align-self: flex-end; /*waarom gebeurt er niks??*/
+        float: right; /*naar rechts*/
+        margin-right: -11em; /*naar rechts*/
+    }
+    
+}
