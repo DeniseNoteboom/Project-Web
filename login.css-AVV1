@@ -1,0 +1,109 @@
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+img[src$=".png"] {
+    max-width: 15em;
+    margin-left: -4em;
+    margin-top: -1em;
+}
+
+img[src$=".jpg"] {
+    max-width: 3em;
+    align-self: flex-end;
+}
+
+/* HEADER */
+main {
+    background-image: url(review-kobo-glo-hb.jpg);
+    background-size: cover;
+    height: 40em;
+    display: flex;
+    justify-content: space-around;
+}
+
+form {
+    background-color: hsla(173, 100%, 100%, 0.87);
+    width: 21em;
+    height: 30em;
+    border-radius: 2em;
+    margin-top: 5em;
+}
+
+main > form > h1 {
+    background-color: white;
+    padding: 0.5em;
+    text-align: center;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    margin-top: -0.5em
+}
+
+legend {
+    font-family: "nexa bold", sans-serif;
+    color: #29129D;
+    text-align: center;
+    display: block;
+}
+
+label {
+    display: block;
+    font-family: "nexa light", sans-serif;
+    text-align: left;
+}
+
+fieldset {
+    border: none;
+    margin: 1em;
+    text-align: left;
+    display: flex;
+}
+
+h1 {
+    font-family: "nexa bold", sans-serif;
+    color: #2CCF78;
+}
+
+input {
+    margin-top: -1.3em;
+    margin-left: auto;
+}
+
+button {
+    display: flex;
+    
+}
+
+/* mediaquery */
+@media all and (max-width:37.5em) {
+    input {
+        display: block;
+        margin-top: auto;
+        margin-right: auto;
+    }
+    
+    label {
+        text-align: center;
+    }
+    
+    form {
+        height: 35em;
+        width: 15em;
+    }
+    
+    main {
+        height: 45em;
+    }
+    
+    img[src$=".png"] {
+        max-width: 10em;
+        margin-left: -2em;
+    }
+
+    img[src$=".jpg"] {
+        max-width: 2em;
+        align-self: flex-end;
+    }
+}
