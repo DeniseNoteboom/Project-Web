@@ -1,0 +1,229 @@
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+img[src$=".png"] {     /* logo */
+    width: 100%;
+    margin-left: -15%
+}
+
+img[src$=".svg"] {    /* login */
+    width: 20%;
+    padding: 3%
+}
+
+header>a:last-child{    /* de laaste link in de header */
+    text-align: right;  /* Door flexbox neemt de link de helft van de pagina in. Door tekst align komt het inlog icoon op de goede plaats te staan. */
+}
+
+@media all and (min-width:40em){
+    
+    img[src$=".png"] {
+        width: 70%;
+    }
+    
+    img[src$=".svg"] {
+        width: 15%;
+    }
+}
+
+/*NAVIGATIE*/
+
+nav {
+    text-align: center;
+}
+
+nav > select {
+    width: 25%;
+    background-color: #F3E5D9;
+    font-size: 1em;
+    
+}
+
+/*BANNER*/
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+body > section {    /* foto */
+    display: flex;
+    background-color: #F3E5D9;
+    padding: 1em;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+h1 {    /* verhaal van de dag */
+    font-family: "nexa bold", sans-serif;
+    font-size: 4em;
+    color: white;
+    background-color: #2CCF78;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin-bottom: 2em;
+    align-self: flex-start;
+    margin-left: 22%;
+}
+
+body > section > article {    /* verhaalblok */
+    background-color: hsla(173, 100%, 100%, 0.60);
+    width: 80%;
+    height: 50em;
+    border-radius: 1em;
+    margin-left: 10em;
+}
+
+body > section > article > h3 { /* titel verhaal */
+    background-color: white;
+    padding: 0.5em;
+    text-align: center;
+    margin-top: -1em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    font-family: "nexa bold", sans-serif;
+    color: #2CCF78;
+    font-size: 4em;
+}
+
+body > section > article > p {    /* preview verhaal */
+    font-family: "nexa bold", sans-serif;
+    margin-bottom: 3em;
+    line-height: 1.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 2em;
+    
+}
+
+body > section > article > a { /* lees verder */
+    background-color: #FC376A;
+    color: white;
+    font-family: "nexa bold", sans-serif;
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 2em;
+    margin-left: 7.5em;
+    font-size: 2em;
+}
+
+
+@media all and (min-width:40em){
+    h1 {
+        font-size: 3em;
+        margin-left: 32%;
+    }
+    
+    body > section > article > h3{
+        font-size: 3em;
+    }
+    
+    body > section > article > p {
+        font-size: 1.5em;
+        line-height: 2em;
+    }
+    
+    body > section > article {
+        width: 70%;
+        height: 43em;
+    }
+    
+    body > section > article > a {
+        margin-left: 6.5em;
+    }
+}
+
+
+/*MAIN*/
+
+main {    /* beige achtergrond */
+    background-color: #F3E5D9;
+    width: 100%;
+    padding: 2em;
+    margin-top: 8em;
+}
+
+main > section  {    /* verhalen */
+    display: flex;
+    column-count: 1;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+main > section > h3 {
+    font-family: "nexa bold", sans-serif;
+    color: black;
+    font-size: 3.5em;
+    display: flex;
+    align-self: flex-start;
+    margin-left: 32%;
+}
+
+main > section > article { /* verhaalblok */
+    background-color: hsla(173, 100%, 100%, 0.70);
+    width: 70%;
+    height: 50em;
+    border-radius: 1em;
+    margin-top: 1.3em;
+    margin-bottom: 8em;
+}
+
+main > section > article > h3 { /* titel verhalen */
+    background-color: white;
+    padding: 0.5em;
+    text-align: center;
+    margin-top: -1em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    font-family: "nexa bold", sans-serif;
+    color: #2CCF78;
+    font-size: 3em;
+}
+
+main > section > article > p {    /* preview verhaal */
+    font-family: "nexa bold", sans-serif;
+    margin-bottom: 3em;
+    font-size: 2em;
+    line-height: 1.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+main > section > article > a {    /* lees verder */
+    background-color: #FC376A;
+    color: white;
+    font-family: "nexa bold", sans-serif;
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 2em;
+    margin-left: 6.5em;
+    font-size: 2em;
+}
+
+@media all and (min-width:40em) {
+    main > section > article > p {
+        font-size: 1.5em;
+        line-height: 2em;
+    }
+    
+    main > section > article {
+        width: 40%;
+        height: 45em;
+    }
+    
+    main > section > article > a {
+        margin-left: 30%;
+    }
+    
+    main > section > h3 {
+        margin-left: 42%;
+    }
+    
+    main > section {
+        column-count: 2;
+    }
+}
