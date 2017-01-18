@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="CSS/login.css">
+</head>
+<body>
+  
+   <header>
+       <a href="index1.html">
+           <img src="Images/LogoTransavia.png" alt="Logo Transavia">
+       </a>
+       <a href="index1.html">
+           <img src="Images/cross-icon.jpg" alt="Login">
+       </a>
+   </header>
+   
+   <main>
+       <form class="draaien">
+          <h1>Login</h1>
+           <fieldset>
+               <legend>Naam</legend>
+               <div class="input-group">
+               <label for="voornaam"></label>
+               <input type="text" name="voornaam" id="voornaam" required>
+               <span class="placeholder">*Voornaam</span>
+               </div>
+               <div class="input-group">
+               <label for="achternaam"></label>
+               <input type="text" name="achternaam" id="achternaam" required>
+               <span class="placeholder">*Achternaam:</span>
+               </div>
+           </fieldset>
+           <fieldset>
+               <legend>adresgegevens</legend>
+               <div class="input-group">
+               <label for="straat"></label>
+               <input type="text" name="straatnaam" id="straat" required>
+               <span class="placeholder">*Straat:</span>
+               </div>
+               <div class="input-group">
+               <label for="postcode"></label>
+               <input type="text" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" name="postcode" id="postcode" required>
+               <span class="placeholder">*Postcode:</span>
+               </div>
+               <div class="input-group">
+               <label for="huisnummer"></label>
+               <input type="number" name="huisnummer" id="huisnummer" required>
+               <span class="placeholder">*Huisnummer:</span>
+                   </div>
+           </fieldset>
+           <fieldset>
+               <legend>Contactgegevens</legend>
+               <div class="input-group">
+               <label for="email"></label>
+               <input type="email" name="email" id="email" required>
+               <span class="placeholder">*Email adres:</span>
+               </div>
+               <div class="input-group">
+               <label for="telefoonnummer"></label>
+               <input type="tel" name="telefoonnummer" id="telefoonnummer" required>
+               <span class="placeholder">Telefoonnummer:</span>
+               </div>
+           </fieldset>
+           <fieldset>
+              <div class="input-group">
+               <label for="wachtwoord"></label>
+               <input type="password" name="wachtwoord" id="wachtwoord" required>
+                <span class="placeholder">*Wachtwoord:</span>
+               </div>
+               <button type="button">Login</button>
+           </fieldset>
+       </form>
+   </main>
+   
+   <script type="text/javascript" src="JavaScript/index.js"></script>
+   
+</body>
+</html>
