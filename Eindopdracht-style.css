@@ -1,0 +1,292 @@
+/* Bronnen: 
+http://codepen.io/tjwudi/pen/zHbdl 
+*/
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+img[src$=".png"] {     /* logo */
+    max-width: 40%;
+    margin-left: -8%
+}
+
+img[src$=".svg"] {    /* login */
+    max-width: 8%;
+    padding: 1em;
+}
+
+header>a:last-child{    /* de laaste link in de header */
+    text-align: right;/* Door flexbox neemt de link de helft van de pagina in. Door tekst align komt het inlog icoon op de goede plaats te staan. */
+}
+
+@media all and (max-width:48em) {
+    
+    header {
+        min-width: 108%;
+    }
+    
+    img[src$=".png"] {     /* logo */
+    max-width: 50%;
+    margin-left: -10%;
+    }
+    
+    img[src$=".svg"] {    /* login */
+    max-width: 10%;
+    }
+}
+
+@media all and (max-width:20em) {
+    
+    img[src$=".png"] {     /* logo */
+    max-width: 90%;
+    margin-left: -20%;
+    }
+    
+    img[src$=".svg"] {    /* login */
+    max-width: 20%;
+    }
+    
+    header {
+        min-width: 248%;
+    }
+}
+
+@media all and (max-width:47em) {
+    
+    header {
+        min-width: 100%;
+    }
+}
+
+/* BANNER */
+body {
+    display: flex;
+    flex-direction: column
+}
+
+body > section {    /* foto */
+    display: flex;
+    background-image: url(825.jpg);
+    background-size: cover;
+    padding: 2em;
+    padding-left: 17em;
+}
+
+h1 {    /* verder lezen van de dag */
+    font-family: "nexa bold", sans-serif;
+    font-size: 2em;
+    color: white;
+    background-color: #2CCF78;
+    height: 1em;
+    width: 6em;
+    text-align: center;
+    padding: 1em;
+    border-radius: 0.5em;
+    margin-left: -1%;
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.25em 0 rgba(0, 0, 0, 0.19);
+}
+
+body > section > article {    /* verhaalblok */
+    background-color: hsla(173, 100%, 100%, 0.87);
+    width: 20em;
+    height: 25em;
+    border-radius: 1em;
+    margin-top: 1.3em;
+    margin-left: 3%;
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.25em 0 rgba(0, 0, 0, 0.19);
+}
+
+body > section > article > h3 { /* titel verhaal */
+    background-color: white;
+    padding: 0.5em;
+    text-align: center;
+    margin-top: -1em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    font-family: "nexa bold", sans-serif;
+    color: #2CCF78;
+    font-size: 2em;
+}
+
+body > section > article > p {    /* preview verhaal */
+    font-family: "nexa bold", sans-serif;
+    width: 16em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    font-size: 1em;
+    line-height: 1.5em;
+    
+}
+
+body > section > article > a:first-of-type { /* lees verder */
+    background-color: #FC376A;
+    color: white;
+    font-family: "nexa bold", sans-serif;
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 2em;
+    margin-left: 6em;
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.25em 0 rgba(0, 0, 0, 0.19);
+}
+
+@media all and (max-width:56.6875em) {
+    
+    h1 {
+        width: 3em;
+        height: 1.8em;
+        margin-left: -7em;
+    }
+    
+}
+
+@media all and (max-width:35.1875em) {
+    
+    body > section {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    h1 {
+        width: 6em;
+        height: 1em;
+        display: flex;
+        align-self: center;
+    }
+    
+    body > section > article {
+        margin-left: -14em;
+        align-self: center
+    }
+    
+}
+
+
+/* NAV */
+nav {    /* navigatie */
+    display: flex;
+    align-items: center;
+    margin-top: 3em;
+    justify-content: center;
+}
+
+nav > select {    /* sorteren en filteren */
+    margin: 1em;
+}
+
+h2 {
+    font-family: "nexa bold", sans-serif;    /* Zoek een verhaal */
+    color: #2CCF78;
+    height: 1em;
+}
+
+/* MAIN */
+main {    /* beige achtergrond */
+    background-color: #F3E5D9;
+    width: 100%;
+    padding: 2em;
+    justify-content: center
+}
+
+main > section  {    /* verhalen */
+    display: flex;
+    flex-wrap: wrap;
+    column-count: 3;
+    justify-content: center;
+    max-width: 85em;
+}
+
+main > section > h3 {
+    height: 1em;
+    font-size: 0em;
+    font-family: 'nexa bold', sans-serif;
+    margin-left: 2em;
+    display: inline;
+    
+}
+
+main > section > article { /* verhaalblok */
+    background-color: hsla(173, 100%, 100%, 0.70);
+    width: 20em;
+    height: 27em;
+    border-radius: 1em;
+    margin-top: 9em;
+    margin-left: 1.5em;
+    align-items: center;
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.25em 0 rgba(0, 0, 0, 0.19);
+
+}
+
+main > section > article > h3 { /* titel verhalen */
+    background-color: white;
+    padding: 0.5em;
+    text-align: center;
+    margin-top: -1em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    font-family: "nexa bold", sans-serif;
+    color: #2CCF78;
+    font-size: 2em;
+}
+
+main > section > article > p {    /* preview verhaal */
+    font-family: "nexa bold", sans-serif;
+    width: 16em;
+    margin-left: 2em;
+    margin-bottom: 3em;
+    margin-top: 2em;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+main > section > article > a:first-of-type {    /* lees verder */
+    background-color: #FC376A;
+    color: white;
+    font-family: "nexa bold", sans-serif;
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 2em;
+    margin-left: 6em;
+    margin-top: auto;
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.25em 0 rgba(0, 0, 0, 0.19);
+    -webkit-transition: font-size 1s;
+}
+
+a:hover {
+    font-size: 1.1em;
+}
+
+.like {
+    display: flex;
+    flex-direction: column;
+    width: 2em;
+    margin-top: -2em;
+}
+
+.download {
+    display: flex;
+    flex-direction: column;
+    width: 2em;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+aside > nav > a > img {
+    width: 5em;
+    transition: transform 2s;
+}
+
+aside > nav > a > img:hover{
+     transform: rotate(360deg);
+}
+
+
+@media all and (max-width:28.125em) {
+    
+    main > section > article {
+        margin-left: -2em;
+    }
+}
