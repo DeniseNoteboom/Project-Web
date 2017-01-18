@@ -1,0 +1,143 @@
+/* Bronnen: 
+http://codepen.io/tjwudi/pen/zHbdl 
+*/
+
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+img[src$=".png"] {     /* logo */
+    width: 100%;
+    margin-left: -15%
+}
+
+header>a:last-child{    /* de laaste link in de header */
+    text-align: right;  /* Door flexbox neemt de link de helft van de pagina in. Door tekst align komt het inlog icoon op de goede plaats te staan. */
+}
+
+img[src$=".jpg"] {
+    width: 70%;
+    padding: 20%
+}
+
+/* HEADER */
+main {
+    background-color: #F3E5D9;;
+    background-size: cover;
+    height: 150em;
+    display: flex;
+    justify-content: space-around;
+}
+
+form {
+    background-color: hsla(173, 100%, 100%, 0.87);
+    width: 50em;
+    height: 143em;
+    border-radius: 2em;
+    margin-top: 5em;
+}
+
+main > form > h1 {
+    background-color: white;
+    padding: 0.5em;
+    text-align: center;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    margin-top: -0.5em;
+    font-size: 4em;
+}
+
+legend {
+    font-family: "nexa bold", sans-serif;
+    color: #29129D;
+    text-align: center;
+    display: block;
+}
+
+label {
+    display: block;
+    font-family: "nexa light", sans-serif;
+    text-align: left;
+}
+
+fieldset {
+    border: none;
+    margin: 1em;
+    text-align: left;
+    display: flex;
+    font-size: 2.5em;
+    line-height: 2em;
+}
+
+h1 {
+    font-family: "nexa bold", sans-serif;
+    color: #2CCF78;
+}
+
+input {
+    height: 1.5em;
+    width: 7em;
+    border-color: gray;
+    border-radius: 0.5em;
+    font-size: 1.5em;
+    -webkit-transition: width .35s ease-in-out;
+}
+
+input:focus {
+    width: 11em;
+}
+
+button {
+    display: flex;
+    font-size: 1em;
+    background-color: #FC376A;
+    color: white;
+    padding: 0.5em;
+    border-radius: 2em;
+    width: 5em;
+    font-family: "nexa bold", sans-serif;
+    justify-content: center;
+    margin-top: 1.5em;
+     box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.25em 0 rgba(0, 0, 0, 0.19);
+    -webkit-transition: font-size 1s;
+    
+}
+
+form.draaien {
+    transition: all 2s;
+}
+
+form.draai {
+    transform: rotateY(360deg);
+}
+
+button:hover {
+    font-size: 1.1em;
+
+}
+
+.input-group {
+  position: relative;
+    margin-bottom: 2.5em;
+}
+
+.input-group .placeholder {
+  font: 1em/1.5em 'nexa bold', sans-serif;
+  position: absolute;
+  top: 33%;
+  left: 1.3125em;
+  margin-top: -0.3em;
+  color: gray;
+  background-color: inherit;
+  transition: all .1s linear;
+  pointer-events: none;
+}
+
+.input-group input:focus + .placeholder, .input-group input:not(:invalid) + .placeholder {
+  color: #FC376A;
+  top: 0%;
+  margin-top: -1.5em;
+}
